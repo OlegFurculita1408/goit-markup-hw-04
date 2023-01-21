@@ -45,7 +45,7 @@ button {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 /* ---------hidden header-------- */
 .visualy-hidden {
@@ -347,7 +347,6 @@ button {
     padding-right: 100px;
 }
 .social-wrap {
-    border: 1px solid yellowgreen;
     min-width: 208px;
 }
 .social-header {
@@ -360,12 +359,12 @@ button {
 }
 .social-item {
     display: flex;
-    justify-content: center;
     gap: 16px;
 }
 .social-items {
     width: 40px;
     height: 40px;
+    flex-basis: calc((100% - 48px) / 4);
 }
 .social-links {
     width: 100%;
@@ -377,7 +376,8 @@ button {
     border-radius: 50%;
 }
 .social-icon-footers {
-    fill: #F4F4FD;  
+    fill: #F4F4FD;
+    align-content: center;  
 }
 
 
@@ -428,6 +428,12 @@ button {
     border: 1px solid #E7E9FC;
     border-top: 0;
     padding: 32px 0 32px 16px;
+}
+.project-items-content:is(:hover, :focus) {
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .project-header {
     color: var(--overlays-shadow-headi);
