@@ -135,6 +135,9 @@ button {
         ,rgba(46, 47, 66, 0.7)),
         url(../images/header-image.jpg);
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    
     max-width: 1600px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -375,6 +378,9 @@ button {
     justify-content: center;
     border-radius: 50%;
 }
+.social-links:is(:hover, :focus) {
+    background-color: #31D0AA;
+}
 .social-icon-footers {
     fill: #F4F4FD;
     align-content: center;  
@@ -405,11 +411,18 @@ button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
 }
 .meniu-filters-btn:hover,
 .meniu-filters-btn:focus {
     color: var(--primary-white-color);
-    background-color: var(--primary-brand-color);
+    background: var(--hover-focus);
+    box-shadow: 0px 3px 1px 
+        rgba(0, 0, 0, 0.1), 0px 2px 1px 
+        rgba(0, 0, 0, 0.08), 0px 2px 2px 
+        rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--hover-focus);
 }
 /* -------------Project Cards----------- */
 .project {
@@ -423,6 +436,15 @@ button {
 }
 .project-items {
     flex-basis: calc((100% - 48px) / 3);
+    border: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px 
+        rgba(46, 47, 66, 0.08);
+}
+.project-items:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px 
+        rgba(46, 47, 66, 0.08), 0px 1px 1px 
+        rgba(46, 47, 66, 0.16), 0px 2px 1px 
+        rgba(46, 47, 66, 0.08);
 }
 .project-items-content {
     border: 1px solid #E7E9FC;
